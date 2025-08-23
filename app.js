@@ -139,35 +139,165 @@
 //                                                  No_9
 
 
-const products = [
-  { id: 3, name: "Redmi", price: 300, rating: 4.0, discount: 10 },
-  { id: 1, name: "IPhone", price: 1200, rating: 4.9, discount: 15 },
-  { id: 4, name: "Samsung", price: 1000, rating: 4.8, discount: 12 },
-  { id: 2, name: "Honor", price: 350, rating: 4.1, discount: 8 }
-];
+// const products = [
+//   { id: 3, name: "Redmi", price: 300, rating: 4.0, discount: 10 },
+//   { id: 1, name: "IPhone", price: 1200, rating: 4.9, discount: 15 },
+//   { id: 4, name: "Samsung", price: 1000, rating: 4.8, discount: 12 },
+//   { id: 2, name: "Honor", price: 350, rating: 4.1, discount: 8 }
+// ];
 
 
-const sortById = [...products].sort((a, b) => a.id - b.id);
-const sortByName = [...products].sort((a, b) => a.name.localeCompare(b.name));
-const sortByPrice = [...products].sort((a, b) => a.price - b.price);
-const sortByRating = [...products].sort((a, b) => b.rating - a.rating);
-const sortByDiscount = [...products].sort((a, b) => b.discount - a.discount);
+// const sortById = [...products].sort((a, b) => a.id - b.id);
+// const sortByName = [...products].sort((a, b) => a.name.localeCompare(b.name));
+// const sortByPrice = [...products].sort((a, b) => a.price - b.price);
+// const sortByRating = [...products].sort((a, b) => b.rating - a.rating);
+// const sortByDiscount = [...products].sort((a, b) => b.discount - a.discount);
 
-console.log("ID bo'yicha:", sortById)
-// console.log("Name bo'yicha:", sortByName);
-// console.log("Price bo'yicha:", sortByPrice);
-// console.log("Rating bo'yicha:", sortByRating);
-// console.log("Discount bo'yicha:", sortByDiscount);
+// console.log("ID bo'yicha:", sortById)
+// // console.log("Name bo'yicha:", sortByName);
+// // console.log("Price bo'yicha:", sortByPrice);
+// // console.log("Rating bo'yicha:", sortByRating);
+// // console.log("Discount bo'yicha:", sortByDiscount);
 
 
 //                                                  No_10
+
+
+// const products = [
+//   { id: 3, name: "Redmi", price: 300, rating: 4.0, discount: 10 },
+//   { id: 1, name: "IPhone", price: 1200, rating: 4.9, discount: 15 },
+//   { id: 4, name: "Samsung", price: 1000, rating: 4.8, discount: 12 },
+//   { id: 2, name: "Honor", price: 350, rating: 4.1, discount: 8 }
+// ];
+
+// const bestProduct = [...products].sort((a, b) => b.rating - a.rating)[0];
+
+// console.log("Eng yuqori rating:", bestProduct);
+
+
 //                                                  No_11
+
+
+// const products = [
+//   { id: 3, name: "Redmi", price: 300, rating: 4.0, discount: 10 },
+//   { id: 1, name: "IPhone", price: 1200, rating: 4.9, discount: 15 },
+//   { id: 4, name: "Samsung", price: 1000, rating: 4.8, discount: 12 },
+//   { id: 2, name: "Honor", price: 350, rating: 4.1, discount: 8 }
+// ];
+
+// const cheapestProduct = [...products].sort((a, b) => a.price - b.price)[0];
+
+// console.log("Narxi eng past product:", cheapestProduct);
+
 //                                                  No_12
+
+
+// const products = [
+//   { id: 3, name: "Redmi", price: 300, rating: 4.0, discount: 10 },
+//   { id: 1, name: "IPhone", price: 1200, rating: 4.9, discount: 15 },
+//   { id: 4, name: "Samsung", price: 1000, rating: 4.8, discount: 12 },
+//   { id: 2, name: "Honor", price: 350, rating: 4.1, discount: 8 }
+// ];
+
+// const totalPrice = products.reduce((sum, product) => sum + product.price, 0);
+
+// console.log(`Barcha mahsulotlar yi'gindisi ${totalPrice}$`);
+
+
 //                                                  No_13
+
+
+// const products = [
+//   { id: 3, name: "Redmi", price: 300, rating: 4.0, discount: 10 },
+//   { id: 1, name: "IPhone", price: 1200, rating: 4.9, discount: 15 },
+//   { id: 4, name: "Samsung", price: 1000, rating: 4.8, discount: 12 },
+//   { id: 2, name: "Honor", price: 350, rating: 4.1, discount: 8 }
+// ];
+
+// const productNames = products.map(product => product.name);
+
+// console.log(productNames);
+
+
 //                                                  No_14
+
+
+// const products = [
+//   { id: 3, name: "Redmi", price: 300, rating: 4.0, discount: 10 },
+//   { id: 1, name: "IPhone", price: 1200, rating: 4.9, discount: 15 },
+//   { id: 4, name: "Samsung", price: 1000, rating: 4.8, discount: 12 },
+//   { id: 2, name: "Honor", price: 350, rating: 4.1, discount: 8 }
+// ];
+
+// const product = products.find(item => item.id === 5);
+
+// console.log(product ? product.name : "Element topilmadi");
+
+
 //                                                  No_15
+
+
+// const products = [
+//   { id: 3, name: "Redmi", price: 300, rating: 4.0, discount: 10 },
+//   { id: 1, name: "IPhone", price: 1200, rating: 4.9, discount: 15 },
+//   { id: 4, name: "Samsung", price: 1000, rating: 4.8, discount: 12 },
+//   { id: 2, name: "Honor", price: 350, rating: 4.1, discount: 8 }
+// ];
+
+
+// const updatedProducts = products.filter(product => product.id !== 4);
+
+// console.log(updatedProducts);
+
+
 //                                                  No_16
+
+
+// function isOnlyLetters(str) {
+//   return str.split('').every(char => /[a-zA-Z\s]/.test(char));
+// }
+
+// console.log(isOnlyLetters("Hello world"));
+
+
 //                                                  No_17
+
+
+// function getTruthyFalsy(arr) {
+//   return {
+//       truthy: arr.filter(item => Boolean(item)),
+//       falsy: arr.filter(item => !Boolean(item))
+//   };
+// }
+
+// console.log(getTruthyFalsy([false, 1, 10, "", null, "abdulaziz", 1.13, 0]));
+
+
 //                                                  No_18
+
+
+// function getWordsLength(str) {
+//   return str.split(" ").map(word => word.length);
+// }
+
+// console.log(getWordsLength('Men Abdulaziz programmerman'));
+
+
 //                                                  No_19
+
+
+// function hasSpace(str) {
+//   return str.split('').some(char => char === ' ');
+// }
+
+// console.log(hasSpace('Men Abdulaziz programmerman'));
+
+
 //                                                  No_20
+
+
+// function getKeyValueStrings(obj) {
+//   return Object.entries(obj).map(entry => entry.join(''));
+// }
+
+// console.log(getKeyValueStrings({ a: 2, b: 5, c: 7 }));
