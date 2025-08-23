@@ -111,10 +111,55 @@
 //                                                  No_7
 
 
+// function getEvenOdd(arr) {
+//   const evenNumbers = arr.filter(num => num % 2 === 0);
+//   const oddNumbers = arr.filter(num => num % 2 !== 0);
+
+//   return { evenNumbers, oddNumbers };
+// }
+
+// console.log(getEvenOdd([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));
 
 
 //                                                  No_8
+
+
+// function removeDuplicates(arr) {
+//   return arr.reduce((unique, current) => {
+//     if (!unique.includes(current)) {
+//       unique.push(current);
+//     }
+//     return unique;
+//   }, []);
+// }
+
+// console.log(removeDuplicates([1, 1, 2, 3, 4, 4, 5, 6, 2, 7, 8, 8, 9, 10]))
+
+
 //                                                  No_9
+
+
+const products = [
+  { id: 3, name: "Redmi", price: 300, rating: 4.0, discount: 10 },
+  { id: 1, name: "IPhone", price: 1200, rating: 4.9, discount: 15 },
+  { id: 4, name: "Samsung", price: 1000, rating: 4.8, discount: 12 },
+  { id: 2, name: "Honor", price: 350, rating: 4.1, discount: 8 }
+];
+
+
+const sortById = [...products].sort((a, b) => a.id - b.id);
+const sortByName = [...products].sort((a, b) => a.name.localeCompare(b.name));
+const sortByPrice = [...products].sort((a, b) => a.price - b.price);
+const sortByRating = [...products].sort((a, b) => b.rating - a.rating);
+const sortByDiscount = [...products].sort((a, b) => b.discount - a.discount);
+
+console.log("ID bo'yicha:", sortById)
+// console.log("Name bo'yicha:", sortByName);
+// console.log("Price bo'yicha:", sortByPrice);
+// console.log("Rating bo'yicha:", sortByRating);
+// console.log("Discount bo'yicha:", sortByDiscount);
+
+
 //                                                  No_10
 //                                                  No_11
 //                                                  No_12
